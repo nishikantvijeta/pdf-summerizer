@@ -4,9 +4,10 @@ services:
     runtime: node
     rootDir: server
     plan: free
+    healthCheckPath: /health
     buildCommand: npm install
     startCommand: npm start
-    autoDeploy: true
+    autoDeployTrigger: commit
     envVars:
       - key: NODE_VERSION
         value: 20.19.0
