@@ -1,0 +1,32 @@
+{
+  "name": "ai-pdf-summarizer-server",
+  "version": "1.0.0",
+  "description": "Express API for uploading PDFs, summarizing them, and answering document-grounded questions with Gemini.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src --watch .env src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "pdf",
+    "gemini",
+    "express",
+    "summarizer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
